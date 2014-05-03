@@ -10,6 +10,8 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
 html,
 button,
 input,
@@ -98,7 +100,198 @@ textarea {
    ========================================================================== */
 
 
+body {
+    /*height: 2000px;*/
+    font-family: Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
 
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    color: #222;
+}
+
+h2 {
+    color: #555;
+}
+
+nav#menu {
+    margin-top: 50px;
+    background: #000000;
+    text-align: center;
+    height: 70px;
+    width: 100%;
+}
+
+nav#menu ul {
+    padding: 0;
+    /*background: white;*/
+    margin: 0 auto;
+    display: inline-block;
+    height: 70px;
+}
+
+nav#menu ul li {
+    float: left;
+    padding: 0 20px;
+    list-style: none;
+    margin-right: 5px;
+    line-height: 70px;
+    height: 70px;
+
+    /*
+     * This element will get an alternative style
+     * once we apply the "scrolled" class.
+     * We also want a nice animation so we can
+     * simply set CSS3 transitions for this.
+     */
+    transition: margin 0.1s ease-in-out;
+}
+
+nav#menu ul li:nth-child(1) {
+    margin-left: 5px;
+}
+
+nav#menu ul li.active {
+    background: #8dc4a6;
+    height: 75px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+nav#menu ul li:hover {
+    background: #c1cac5;
+    height: 75px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+nav#menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+nav#menu h1#sitename {
+    font-size: 1.2em;
+    line-height: 50px;
+    margin: 0;
+    position: absolute;
+    left: 0.5em;
+    color: white;
+    opacity: 0;
+
+    /*
+     * Same thing here as with the menu items.
+     * This element will be animated into its
+     * alt. state with the transition property
+     */
+    transition: opacity 0.1s ease-in-out;
+}
+
+
+/*********************************************
+ * Once the 'scrolled' class is toggled
+ * we can set any alternative styling that we
+ * want for the menu bar
+ *********************************************/
+
+nav#menu.scrolled {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    height: 50px;
+
+    background-color: rgba(0, 0, 0, 0.9);
+
+    transition: background-color 0.5s ease-in-out;
+    transition: height 0.2s ease-in-out;
+
+    -moz-transition: background-color 0.5s ease-in-out;
+    -moz-transition: height 0.2s ease-in-out;
+
+    -webkit-transition: background-color 0.5s ease-in-out;
+    -webkit-transition: height 0.2s ease-in-out;
+
+    -o-transition: background-color 0.5s ease-in-out;
+    -o-transition: height 0.2s ease-in-out;
+}
+
+nav#menu.scrolled ul li {
+    margin: 0;
+    line-height: 50px;
+    height: 50px;
+    transition: line-height 0.2s ease-in-out;
+    -moz-transition: line-height 0.2s ease-in-out;
+    -webkit-transition: line-height 0.2s ease-in-out;
+    -o-transition: line-height 0.2s ease-in-out;
+}
+
+nav#menu.scrolled h1#sitename {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+}
+
+nav#menu.scrolled ul li.active {
+    background: #8dc4a6;
+    height: 52px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+nav#menu.scrolled ul li.active:hover {
+    background: #8dc4a6;
+    height: 55px;
+}
+
+nav#menu.scrolled ul li:hover {
+    background: #c1cac5;
+    height: 55px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    transition: height 0.1s ease-in-out;
+    -moz-transition: height 0.1s ease-in-out;
+    -webkit-transition: height 0.1s ease-in-out;
+    -o-transition: height 0.1s ease-in-out;
+}
+
+/* contact class */
+
+.contact {
+    background-image: url('../img/bg-contact.png');
+    background-color: #303030;
+    /*test1 30%, bg2 70%?*/
+    box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.1);
+}
+
+.contact h1 {
+    color: #ffffff;
+}
+
+.contact input {
+    border-radius: 8px;
+    background: #292929;
+    border-style: solid;
+    border-color: #202020;
+}
+
+.contact textarea {
+    border-radius: 8px;
+    background: #292929;
+    border-color: #202020;
+}
+
+.contact .send-button {
+    border-radius: 8px;
+    background: #105cb6;
+}
 
 
 
