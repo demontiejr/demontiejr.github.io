@@ -163,7 +163,7 @@ nav#menu ul li.active {
 }
 
 nav#menu ul li:hover {
-    background: #c1cac5;
+    background: #3f3f3f;
     height: 75px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -191,7 +191,6 @@ nav#menu a#sitename {
      */
     transition: opacity 0.1s ease-in-out;
 }
-
 
 /*********************************************
  * Once the 'scrolled' class is toggled
@@ -256,7 +255,7 @@ nav#menu.scrolled ul li.active:hover {
 }
 
 nav#menu.scrolled ul li:hover {
-    background: #c1cac5;
+    background: #3f3f3f;
     height: 55px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -307,12 +306,26 @@ nav#menu.scrolled ul li:hover {
     font-weight: 300;
 }
 
-.contact .send-button {
-    border-radius: 8px;
-    background: #105cb6;
+.experience {
+
 }
 
+.experience .picture {
+    float: right;
+}
 
+.experience .description {
+    margin-right: 160px;
+}
+
+.experience .description .period {
+    font-size: small;
+    color: #444444;
+}
+
+.experience .description p {
+    text-align: justify;
+}
 
 /* ==========================================================================
    Helper classes
