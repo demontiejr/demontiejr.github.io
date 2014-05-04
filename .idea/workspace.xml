@@ -26,8 +26,8 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13157895" vertical-offset="1905" max-vertical-offset="3690">
-              <caret line="132" column="76" selection-start-line="132" selection-start-column="76" selection-end-line="132" selection-end-column="76" />
+            <state vertical-scroll-proportion="0.34210527" vertical-offset="90" max-vertical-offset="3690">
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -192,11 +192,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/img" />
       <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$/css" />
       <recent name="C:\Users\Junior\WebstormProjects\demontiejr\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -502,16 +505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/favicon.ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apple-touch-icon-precomposed.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="610">
@@ -667,10 +660,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apple-touch-icon-precomposed.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apple-touch-icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13157895" vertical-offset="1905" max-vertical-offset="3690">
-          <caret line="132" column="76" selection-start-line="132" selection-start-column="76" selection-end-line="132" selection-end-column="76" />
+        <state vertical-scroll-proportion="0.34210527" vertical-offset="90" max-vertical-offset="3690">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
