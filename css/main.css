@@ -175,7 +175,7 @@ nav#menu ul li a {
     font-size: 1.3em;
 }
 
-nav#menu h1#sitename {
+nav#menu a#sitename {
     font-size: 1.2em;
     line-height: 50px;
     margin: 0;
@@ -220,6 +220,10 @@ nav#menu.scrolled {
     -o-transition: height 0.2s ease-in-out;
 }
 
+nav#menu.scrolled ul {
+    height: 50px;
+}
+
 nav#menu.scrolled ul li {
     margin: 0;
     line-height: 50px;
@@ -230,7 +234,8 @@ nav#menu.scrolled ul li {
     -o-transition: line-height 0.2s ease-in-out;
 }
 
-nav#menu.scrolled h1#sitename {
+nav#menu.scrolled a#sitename {
+    text-decoration: none;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
     -moz-transition: opacity 0.5s ease-in-out;
@@ -262,13 +267,16 @@ nav#menu.scrolled ul li:hover {
     -o-transition: height 0.1s ease-in-out;
 }
 
+.navbar-collapse.collapse.in, .navbar-collapse.collapsing {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
 /* contact class */
 
 .contact {
     background-image: url('../img/bg-contact.png');
     background-color: #303030;
     /*test1 30%, bg2 70%?*/
-    box-shadow: inset 0px 1px 0px 0px rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.1);
 }
 
 .contact h1 {
@@ -277,15 +285,26 @@ nav#menu.scrolled ul li:hover {
 
 .contact input {
     border-radius: 8px;
+    border: 0;
     background: #292929;
-    border-style: solid;
     border-color: #202020;
+    box-shadow: inset 0px 2px 1px 0px rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.1);
+
+    line-height: 1.85em;
+    color: #ffffff;
+    font-weight: 300;
 }
 
 .contact textarea {
     border-radius: 8px;
+    border: 0;
     background: #292929;
     border-color: #202020;
+    box-shadow: inset 0px 2px 1px 0px rgba(0,0,0,0.05), inset 0px 2px 3px 0px rgba(0,0,0,0.1);
+
+    line-height: 1.85em;
+    color: #ffffff;
+    font-weight: 300;
 }
 
 .contact .send-button {
