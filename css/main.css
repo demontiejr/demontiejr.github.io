@@ -339,6 +339,15 @@ nav#menu.scrolled ul li:hover {
     display: inline-block;
 }
 
+.footer a {
+    color: #777777;
+    text-decoration: underline;
+}
+
+.footer a:hover {
+    color: #888888;
+}
+
 .me {
     border-radius: 50%;
     overflow: hidden;
