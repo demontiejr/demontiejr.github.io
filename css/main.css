@@ -327,6 +327,18 @@ nav#menu.scrolled ul li:hover {
     text-align: justify;
 }
 
+.footer {
+    text-align: center;
+    color: #444444;
+}
+
+.me {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
