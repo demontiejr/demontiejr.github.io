@@ -268,6 +268,7 @@ nav#menu.scrolled ul li:hover {
 
 .navbar-collapse.collapse.in, .navbar-collapse.collapsing {
     background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
 }
 
 /* contact class */
@@ -329,7 +330,13 @@ nav#menu.scrolled ul li:hover {
 
 .footer {
     text-align: center;
-    color: #444444;
+    color: #777777;
+}
+
+.footer li {
+    margin: 0.25em;
+    position: relative;
+    display: inline-block;
 }
 
 .me {
@@ -337,6 +344,57 @@ nav#menu.scrolled ul li:hover {
     overflow: hidden;
     width: 300px;
     height: 300px;
+}
+
+.social {
+    text-align: center;
+}
+
+.social li {
+    margin: 0.25em;
+    position: relative;
+    display: inline-block;
+}
+
+.social li:hover {
+    top: -5px;
+
+    transition: top 0.5s ease-in-out;
+    -moz-transition: top 0.5s ease-in-out;
+    -webkit-transition: top 0.5s ease-in-out;
+    -o-transition: top 0.5s ease-in-out;
+}
+
+.social a {
+    color: #5E5E5E !important;
+    text-decoration: none;
+}
+
+.social a:hover {
+    transition: color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+}
+
+.social #linkedin:hover {
+    color: #4875B4 !important;
+}
+
+.social #twitter:hover {
+    color: #33CCFF !important;
+}
+
+.social #facebook:hover {
+    color: #3B5998 !important;
+}
+
+.social #google:hover {
+    color: #C63D2D !important;
+}
+
+.social #github:hover {
+    color: #CCCCCC !important;
 }
 
 /* ==========================================================================
