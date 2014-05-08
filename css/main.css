@@ -328,6 +328,16 @@ nav#menu.scrolled ul li:hover {
     text-align: justify;
 }
 
+.form-buttons {
+    text-align: center;
+}
+
+.form-buttons li {
+    margin: 0.25em;
+    position: relative;
+    display: inline-block;
+}
+
 .footer {
     text-align: center;
     color: #777777;
@@ -387,11 +397,11 @@ nav#menu.scrolled ul li:hover {
 }
 
 .social #linkedin:hover {
-    color: #4875B4 !important;
+    color: #007bb6 !important;
 }
 
 .social #twitter:hover {
-    color: #33CCFF !important;
+    color: #00aced !important;
 }
 
 .social #facebook:hover {
@@ -399,11 +409,15 @@ nav#menu.scrolled ul li:hover {
 }
 
 .social #google:hover {
-    color: #C63D2D !important;
+    color: #dd4b39 !important;
 }
 
 .social #github:hover {
     color: #CCCCCC !important;
+}
+
+.col-lg-8, .col-lg-4, .col-lg-6 {
+    position: inherit;
 }
 
 /* ==========================================================================
