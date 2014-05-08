@@ -348,7 +348,19 @@ nav#menu.scrolled ul li:hover {
     padding-right: 50px;
 }
 
+.paragraph {
+    margin-left: 310px;
+}
+
 @media (max-width: 500px) {
+    .paragraph {
+        margin-left: 0;
+    }
+
+    .experience .picture {
+        float: none;
+    }
+
     .education {
         text-align: left;
         display: block;
