@@ -434,6 +434,12 @@ nav#menu.scrolled ul li:hover {
     position: inherit;
 }*/
 
+.sublogo {
+    font-family: "Courier New";
+    font-size: 1.55vw;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
