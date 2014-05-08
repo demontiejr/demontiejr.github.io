@@ -104,7 +104,6 @@ body {
     /*height: 2000px;*/
     font-family: Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
-    width: 100%;
 }
 
 h1, h2 {
@@ -364,10 +363,27 @@ nav#menu.scrolled ul li:hover {
 }
 
 .me {
+    float: left;
+}
+
+.me img {
     border-radius: 50%;
     overflow: hidden;
     width: 300px;
     height: 300px;
+}
+
+@media (max-width: 500px) {
+    .me {
+        float: none;
+    }
+
+    .me img {
+        border-radius: 50%;
+        overflow: hidden;
+        width: 8vw;
+        height: 8vw;
+    }
 }
 
 .social {
