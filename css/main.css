@@ -433,6 +433,7 @@ nav#menu.scrolled ul li:hover {
 
 @media (max-width: 500px) {
     .me {
+        text-align: center;
         float: inherit;
         display: block;
     }
@@ -445,6 +446,7 @@ nav#menu.scrolled ul li:hover {
 
 @media (max-width: 600px) {
     .me {
+        text-align: center;
         float: inherit;
         display: block;
     }
