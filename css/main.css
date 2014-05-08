@@ -118,6 +118,10 @@ h2 {
     color: #555;
 }
 
+/* === Navigation Menu. Based on:
+stackoverflow.com/questions/19691318/update-selected-option-in-select-menu-based-on-scroll-position
+ === */
+
 nav#menu {
     margin-top: 50px;
     background: #000000;
@@ -268,11 +272,14 @@ nav#menu.scrolled ul li:hover {
 
 .navbar-collapse.collapse.in, .navbar-collapse.collapsing {
     background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
 }
 
 .navbar-collapse.collapse.in ul, .navbar-collapse.collapsing ul {
     width: 100%;
 }
+
+/* === End of Navigation Menu === */
 
 /* contact class */
 
@@ -310,6 +317,10 @@ nav#menu.scrolled ul li:hover {
     font-weight: 300;
 }
 
+/* End of contact class */
+
+/* ==== experience class ==== */
+
 .experience {
 
 }
@@ -330,6 +341,22 @@ nav#menu.scrolled ul li:hover {
 .experience .description p {
     text-align: justify;
 }
+
+.education {
+    text-align: left;
+    display: table-cell;
+    padding-right: 50px;
+}
+
+@media (max-width: 500px) {
+    .education {
+        text-align: left;
+        display: block;
+    }
+}
+
+
+/* ==== End of experience class ==== */
 
 .form-buttons {
     text-align: center;
@@ -374,7 +401,8 @@ nav#menu.scrolled ul li:hover {
 
 @media (max-width: 500px) {
     .me {
-        float: none;
+        float: inherit;
+        display: block;
     }
 
     .me img {
@@ -384,6 +412,8 @@ nav#menu.scrolled ul li:hover {
         height: 80vw;
     }
 }
+
+/* === Social media icons === */
 
 .social {
     text-align: center;
@@ -435,6 +465,8 @@ nav#menu.scrolled ul li:hover {
 .social #github:hover {
     color: #CCCCCC !important;
 }
+
+/* === End of Social media icons === */
 
 .logo {
     text-align: center;
