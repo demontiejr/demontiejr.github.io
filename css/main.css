@@ -442,6 +442,10 @@ nav#menu.scrolled ul li:hover {
     .sublogo { font-size: 0.5vmax; }
 }
 
+@media (min-width: 301px) {
+    .sublogo { font-size: 0.5vmax; }
+}
+
 @media (min-width: 500px) {
     .sublogo { font-size: 100%; }
 }
