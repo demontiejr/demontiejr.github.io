@@ -381,8 +381,8 @@ nav#menu.scrolled ul li:hover {
     .me img {
         border-radius: 50%;
         overflow: hidden;
-        width: 80vmin;
-        height: 80vmin;
+        width: 80vw;
+        height: 80vw;
     }
 }
 
