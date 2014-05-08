@@ -371,6 +371,20 @@ nav#menu.scrolled ul li:hover {
     }
 }
 
+@media (max-width: 600px) {
+    .paragraph {
+        margin-left: 0;
+    }
+
+    .experience .description {
+        margin-right: 0;
+    }
+
+    .experience .picture {
+        float: none;
+    }
+    
+}
 
 /* ==== End of experience class ==== */
 
