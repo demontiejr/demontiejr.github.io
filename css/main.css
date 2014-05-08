@@ -383,7 +383,7 @@ nav#menu.scrolled ul li:hover {
     .experience .picture {
         float: none;
     }
-    
+
 }
 
 /* ==== End of experience class ==== */
@@ -429,15 +429,13 @@ nav#menu.scrolled ul li:hover {
     height: 300px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .me {
         float: inherit;
         display: block;
     }
 
     .me img {
-        border-radius: 50%;
-        overflow: hidden;
         width: 80vw;
         height: 80vw;
     }
