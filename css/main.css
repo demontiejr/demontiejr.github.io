@@ -271,8 +271,8 @@ nav#menu.scrolled ul li:hover {
     width: 100%;
 }
 
-.navbar-collapse.collapse.in li, .navbar-collapse.collapsing li {
-    width: 25%;
+.navbar-collapse.collapse.in ul, .navbar-collapse.collapsing ul {
+    width: 100%;
 }
 
 /* contact class */
