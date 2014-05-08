@@ -436,9 +436,23 @@ nav#menu.scrolled ul li:hover {
 
 .sublogo {
     font-family: "Courier New";
-    font-size: 1.55vmax;
 }
 
+@media (max-width: 300px) {
+    .sublogo { font-size: 70%; }
+}
+
+@media (min-width: 500px) {
+    .sublogo { font-size: 80%; }
+}
+
+@media (min-width: 700px) {
+    .sublogo { font-size: 150%; }
+}
+
+@media (min-width: 1200px) {
+    .sublogo { font-size: 150%; }
+}
 
 /* ==========================================================================
    Helper classes
