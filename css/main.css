@@ -438,11 +438,11 @@ nav#menu.scrolled ul li:hover {
     font-family: "Courier New";
 }
 
-@media (max-width: 300px) {
+/*@media (max-width: 300px) {
     .sublogo { font-size: 1.5vmax; }
-}
+}*/
 
-@media (min-width: 301px) {
+@media (max-width: 499px) {
     .sublogo { font-size: 1.5vmax; }
 }
 
@@ -454,9 +454,9 @@ nav#menu.scrolled ul li:hover {
     .sublogo { font-size: 150%; }
 }
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
     .sublogo { font-size: 150%; }
-}
+}*/
 
 /* ==========================================================================
    Helper classes
