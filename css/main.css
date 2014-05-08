@@ -357,6 +357,10 @@ nav#menu.scrolled ul li:hover {
         margin-left: 0;
     }
 
+    .experience .description {
+        margin-right: 0;
+    }
+
     .experience .picture {
         float: none;
     }
