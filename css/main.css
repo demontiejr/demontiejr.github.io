@@ -439,11 +439,11 @@ nav#menu.scrolled ul li:hover {
 }
 
 @media (max-width: 300px) {
-    .sublogo { font-size: 70%; }
+    .sublogo { font-size: 1vw; }
 }
 
 @media (min-width: 500px) {
-    .sublogo { font-size: 80%; }
+    .sublogo { font-size: 100%; }
 }
 
 @media (min-width: 700px) {
