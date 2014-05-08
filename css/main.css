@@ -420,9 +420,19 @@ nav#menu.scrolled ul li:hover {
     color: #CCCCCC !important;
 }
 
-.col-lg-8, .col-lg-4, .col-lg-6 {
-    position: inherit;
+.logo {
+    text-align: center;
 }
+
+.logo li {
+    margin: 0.25em;
+    position: relative;
+    display: inline-block;
+}
+
+/*.col-lg-8, .col-lg-4, .col-lg-6 {
+    position: inherit;
+}*/
 
 /* ==========================================================================
    Helper classes
