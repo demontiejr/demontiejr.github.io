@@ -317,6 +317,15 @@ nav#menu.scrolled ul li:hover {
     font-weight: 300;
 }
 
+.invalid-field {
+    border: 2px solid !important;
+    border-color: #cc1111 !important;
+    transition: border-color 0.5s ease-in-out;
+    -moz-transition: border-color 0.5s ease-in-out;
+    -webkit-transition: border-color 0.5s ease-in-out;
+    -o-transition: border-color 0.5s ease-in-out;
+}
+
 /* End of contact class */
 
 /* ==== experience class ==== */

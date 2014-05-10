@@ -41,11 +41,7 @@
         </div>
         <h2 class="sublogo">Computer Scientist</h2>
 
-        <!-- <div class="logo">
-            <li style="margin: 0;"><img src="img/demontiejr.png" width="100px" height="100px"></li>
-            <li style="margin: 0; top: 15px;"><h1 style="font-size: 50px;">emontiê Jr</h1></li>
-        </div> -->
-
+        <!-- Navigation Menu -->
         <nav id="menu">
             <a href="#" id="sitename">
                 <span style="border: 1px solid white; border-radius: 6px; width: 30px; height: 30px;">&nbsp;D&nbsp;</span>emontiê Jr</a>
@@ -66,6 +62,8 @@
             </ul>
             </div>
         </nav>
+
+        <!-- Body begin -->
 
         <div id="body">
             <div id="home" class="page-header">
@@ -128,7 +126,12 @@
 
             </div>
 
-            <div id="experience" class="page-header">
+            <div id="experience">
+                <!-- Empty div to reference in the -->
+                <br/>
+            </div>
+
+            <div class="page-header">
                 <h1> Experience </h1>
             </div>
             <div class="container">
@@ -220,7 +223,11 @@
                 </div>
             </div>
 
-            <div id="skills" class="page-header">
+            <div id="skills">
+                <!-- Empty div to reference in the -->
+                <br/>
+            </div>
+            <div class="page-header">
                 <h1> Skills </h1>
             </div>
             <div class="container">
@@ -240,7 +247,7 @@
                     <h2>Languages</h2>
                     <ul>
                         <li>Portuguese: native</li>
-                        <li>English: advanced level on reading; intermediate level on understanding, writing and speaking;
+                        <li>English: intermediate level on reading, understanding, writing and speaking;
                             <br/>
                             Spent months living in Calgary, AB (Canada); TOEIC score: 860 – in October 17 th , 2013</li>
                     </ul>
@@ -250,27 +257,31 @@
 
             <br/>
 
-            <div id="contact" class="contact">
+            <div id="contact">
+                <!-- Empty div to reference in the -->
+                <br/>
+            </div>
+            <div class="contact">
                 <br/>
                 <h1> Get in touch! </h1>
                 <br>
-                <form method="post" action="php/send_email.php">
+                <form id="contactForm" method="post" action="php/send_email.php">
                     <div align="center">
-                        <input class="input-lg" type="text" name="name" id="name" placeholder="Name" style="width: 30%;" />
-                        <input class="input-lg" type="email" name="email" id="email" placeholder="Email" style="width: 30%;" />
+                        <input class="input-lg" type="text" name="name" id="name" placeholder="Name" onblur="validate(this);" style="width: 30%;" />
+                        <input class="input-lg" type="email" name="email" id="email" placeholder="Email" onblur="validate(this);" style="width: 30%;" />
                     </div>
                     <br/>
                     <div align="center">
-                        <input class="input-lg" type="text" name="subject" id="subject" placeholder="Subject" style="width: 60.2%;" />
+                        <input class="input-lg" type="text" name="subject" id="subject" placeholder="Subject" onblur="validate(this);" style="width: 60.2%;" />
                     </div>
                     <br/>
                     <div align="center">
-                        <textarea class="input-lg" name="message" id="message" placeholder="Message" style="width: 60.2%; height: 150px;"></textarea>
+                        <textarea class="input-lg" name="message" id="message" placeholder="Message" onblur="validate(this);" style="width: 60.2%; height: 150px;"></textarea>
                     </div>
                     <br/>
                     <div class="form-buttons">
                         <li><button type="submit" class="btn btn-lg btn-primary">Send Message</button></li>
-                        <li><button type="button" class="btn btn-lg btn-default">Clear Form</button></li>
+                        <li><button type="button" class="btn btn-lg btn-default" onclick="clearForm(contactForm);">Clear Form</button></li>
                     </div>
                 </form>
 
@@ -292,7 +303,7 @@
                 <div class="footer">
                     <li>© 2014 Demontiê Junior</li>
                     <li>|</li>
-                    <li>Design: Demontiê Junior (Using <a href="http://html5boilerplate.com/" target="_blank">HTML5 Boilerplate</a>
+                    <li>Design: Demontiê Junior (Also used <a href="http://html5boilerplate.com/" target="_blank">HTML5 Boilerplate</a>
                         and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>)</li>
                 </div>
                 <br/>
@@ -301,21 +312,22 @@
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <!-- Other JavaScripts -->
         <script src="js/bootstrap.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/scrollMonitor.js"></script>
         <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!-- Google Analytics -->
         <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-50839874-1', 'demontiejr.com');
+            ga('send', 'pageview');
         </script>
     </body>
 </html>

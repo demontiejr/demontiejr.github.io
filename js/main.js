@@ -43,3 +43,58 @@ $(window).load(function() {
         }
     });
 });
+
+/* ============= Util functions ============= */
+
+function addClass(field, className) {
+    if (!field.className.match(new RegExp(className))) {
+        field.className += " " + className;
+    }
+}
+
+String.prototype.remove = function(toRemove) {
+    return this.replace(new RegExp(toRemove, "g"), "").trim();
+}
+
+function removeClass(field, className) {
+    field.className = field.className.remove(className);
+}
+
+function getFormFields(form) {
+    tagNames = ['input', 'textarea'];
+    var fields = [];
+
+    for (var i=0; i < tagNames.length; i++) {
+        var elements = form.getElementsByTagName(tagNames[i]);
+        for (var j=0; j < elements.length; j++)
+            fields.push(elements[j]);
+    }
+
+    return fields;
+}
+
+function clearForm(form) {
+    var fields = getFormFields(form);
+
+    for (var i=0; i < fields.length; i++) {
+        fields[i].value = "";
+        removeClass(fields[i], "invalid-field");
+    }
+}
+
+function validate(field) {
+    var valid = true;
+
+    if (field.type == "email") {
+        var mailPattern = /[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}/;
+        var valid = mailPattern.test(field.value);
+    } else {
+        valid = field.value != "";
+    }
+
+    if (!valid) {
+        addClass(field, "invalid-field");
+    } else {
+        removeClass(field, "invalid-field");
+    }
+}
