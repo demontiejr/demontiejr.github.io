@@ -372,6 +372,7 @@ nav#menu.scrolled ul li:hover {
 
     .experience .picture {
         float: none;
+        text-align: center;
     }
 
     .education {
