@@ -118,6 +118,16 @@ h2 {
     color: #555;
 }
 
+a.paper {
+    color: black;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+a.paper:hover {
+    text-decoration: none;
+}
+
 /* === Navigation Menu. Based on:
 stackoverflow.com/questions/19691318/update-selected-option-in-select-menu-based-on-scroll-position
  === */
@@ -208,7 +218,7 @@ nav#menu.scrolled {
     top: 0;
     height: 50px;
 
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.93);
 
     transition: background-color 0.5s ease-in-out;
     transition: height 0.2s ease-in-out;

@@ -3,4 +3,4 @@
 User-agent: *
 
 Disallow: /php/
-Disallow: /dpc/
+Disallow: /doc/
